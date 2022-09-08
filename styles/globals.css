@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Raleway, sans-serif !important;
+  background: linear-gradient(to bottom right, #00b7e1, #c29cff);
 }
 
 a {
@@ -15,12 +15,70 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 4em 6em;
+  justify-content: space-evenly;
+}
+
+.date-picker-container {
+  margin: 1em auto;
+  width: 300px;
+}
+
+.date-picker-container 
+  input,
+  button
+  {
+  font-family: Raleway, sans-serif !important;
+}
+
+.time-until-container {
+  height: 40%;
+  border-radius: 3px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.datetime-box {
+  height: 100%;
+  width: 9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.datetime-box div {
+  height: 40%;
+    background: linear-gradient(140deg, #ffffff, #b7b7b7);
+    color: #404040;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 6rem;
+    font-family: monospace;
+    padding: 5px;
+    box-shadow: 1px 1px 5px #4c4c4c;
+}
+
+.datetime-label {
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  text-align: center;
+  margin: 0 0 1em 0;
+  color: whitesmoke;
+  font-family: Raleway, sans-serif;
+  letter-spacing: -2px;
+}
+
+.note {
+  margin: 1em auto;
+  font-size: 2rem;
+  color: whitesmoke;
+  /* font-style: italic; */
+  letter-spacing: -2px;
+  text-align: center;
 }
